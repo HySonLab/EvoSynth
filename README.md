@@ -15,7 +15,7 @@ unzip checkpoints.zip -d MolSculptor/
 Once the checkpoints are downloaded, molecular generation can be performed using the provided shell script:
 
 ```bash
-bash diff_evo_opt_dual.sh
+bash ./MolSculptor/diff_evo_opt_dual.sh
 ```
 
 This script runs the dual-target optimization pipeline with the pretrained EvoSynth model. Before execution, users should review and update the parameters to suit their specific use case.
@@ -29,7 +29,7 @@ After molecule generation, the resulting `.pkl` file (e.g., `diffusion_es_opt.pk
 First, convert the EvoSynth output to a CSV format compatible with SPARROW using the provided shell script:
 
 ```bash
-bash prepare_sparrow_input.sh
+bash ./MolSculptor/prepare_sparrow_input.sh
 ```
 
 Before running, please review and update the parameters inside prepare_sparrow_input.sh to ensure they match your experiment setup.
@@ -39,7 +39,7 @@ Before running, please review and update the parameters inside prepare_sparrow_i
 Once the input file is prepared, execute **SPARROW** to perform synthesis-aware candidate prioritization using the provided shell script:
 
 ```bash
-bash run.sh
+bash ./sparrow/run.sh
 ```
 Before running, make sure to review and modify the parameters in run.sh to match your setup.
 
