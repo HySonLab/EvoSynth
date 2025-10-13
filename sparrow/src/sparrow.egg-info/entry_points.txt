@@ -1,0 +1,2 @@
+[console_scripts]
+sparrow = sparrow.cli.run:run
