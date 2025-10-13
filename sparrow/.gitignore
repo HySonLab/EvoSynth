@@ -1,0 +1,48 @@
+# askcos 
+askcos
+askcos-core
+askcos-base
+
+# setup
+dist 
+build
+
+# results 
+results/
+sparrow_results/
+*logs*
+
+# large files 
+*.json
+!examples/amd/trees_w_info.json
+!examples/button_alectinib/trees_w_info.json
+!examples/button_alectinib/trees_w_info.json
+!examples/garibsingh/trees_w_info.json
+*.zip
+*.sdf
+
+# proprietary/from commercial software
+*reaction_classes*
+
+# figures 
+*.pdf 
+*.png 
+notebooks/nonlinear
+examples/automoldesigner/figures/figs
+
+# debugging 
+debug/
+
+# secret keys 
+key*
+
+# misc 
+**/__pycache__/
+UNKNOWN**
+*.egg-info/
+*.egg
+.vscode
+*.log
+.idea/
+tmp/
+*/.ipynb_checkpoints*
