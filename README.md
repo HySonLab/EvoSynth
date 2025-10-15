@@ -6,8 +6,16 @@ Pretrained EvoSynth checkpoints are publicly available on **Zenodo**.
 They can be downloaded and extracted into the project directory using the following commands:
 
 ```bash
-wget https://zenodo.org/record/XXXXXXX/files/checkpoints.zip
-unzip checkpoints.zip -d MolSculptor/
+# Move into the MolSculptor project directory
+cd MolSculptor/
+
+# Download both pretrained checkpoints from Zenodo
+wget https://zenodo.org/record/17351094/files/auto-encoder.zip
+wget https://zenodo.org/record/17351094/files/diffusion-transformer.zip
+
+# Extract them into the checkpoints directory
+unzip auto-encoder.zip -d checkpoints/
+unzip diffusion-transformer.zip -d checkpoints/
 ```
 
 ## 2. Run EvoSynth Inference
@@ -41,6 +49,7 @@ Once the input file is prepared, execute **SPARROW** to perform synthesis-aware 
 ```bash
 bash ./sparrow/run.sh
 ```
+
 Before running, make sure to review and modify the parameters in run.sh to match your setup.
 
 ## Access Docking Datasets
@@ -50,8 +59,14 @@ To facilitate reproducibility and future research in multi-target drug discovery
 The datasets can be downloaded from **Zenodo** using the following commands:
 
 ```bash
-wget https://zenodo.org/record/YYYYYYY/files/docking_datasets.zip
-unzip docking_datasets.zip -d data/
+# Move into the MolSculptor project directory
+cd MolSculptor/
+
+# Download the docking datasets from Zenodo
+wget https://zenodo.org/record/17354937/files/data.zip
+
+# Extract the dataset archive
+unzip data.zip
 ```
 
 ## Acknowledgment
