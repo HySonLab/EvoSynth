@@ -54,20 +54,16 @@ Before running, make sure to review and modify the parameters in run.sh to match
 
 ## Access Docking Datasets
 
-To facilitate reproducibility and future research in multi-target drug discovery, all docking datasets used in this work will be **publicly released**. 
-
-The datasets can be downloaded from **Zenodo** using the following commands:
+The docking datasets used for EvoSynth fine-tuning are provided in the `data/` directory.
 
 ```bash
-# Move into the MolSculptor project directory
-cd MolSculptor/
-
-# Download the docking datasets from Zenodo
-wget https://zenodo.org/record/17354937/files/data.zip
-
-# Extract the dataset archive
-unzip data.zip
+MolSculptor/
+└── data/
+    ├── case_jnk3-gsk3b_docking_scores.csv
+    └── case_parp1-pik3ca_docking_scores.csv
 ```
+
+These files provide the affinity labels used to fine-tune and evaluate EvoSynth across both dual-target scenarios.
 
 ## Acknowledgment
 
