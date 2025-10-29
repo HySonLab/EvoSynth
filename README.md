@@ -6,16 +6,17 @@ Pretrained EvoSynth checkpoints are publicly available on **Zenodo**.
 They can be downloaded and extracted into the project directory using the following commands:
 
 ```bash
-# Move into the MolSculptor project directory
-cd MolSculptor/
+# Create and move into the checkpoints directory
+mkdir -p MolSculptor/checkpoints
+cd MolSculptor/checkpoints
 
-# Download both pretrained checkpoints from Zenodo
-wget https://zenodo.org/record/17351094/files/auto-encoder.zip
+# Download pretrained checkpoints from Zenodo
+wget https://zenodo.org/records/17351094/files/auto-encoder.zip
 wget https://zenodo.org/record/17351094/files/diffusion-transformer.zip
 
-# Extract them into the checkpoints directory
-unzip auto-encoder.zip -d checkpoints/
-unzip diffusion-transformer.zip -d checkpoints/
+# Extract the checkpoint archives
+unzip auto-encoder.zip
+unzip diffusion-transformer.zip
 ```
 
 ## 2. Run EvoSynth Inference
