@@ -96,8 +96,6 @@ This work builds directly upon two prior open-source frameworks that form the fo
 }
 ```
 
-## Please cite our work!
-
 
 
 
