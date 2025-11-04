@@ -19,6 +19,8 @@ unzip auto-encoder.zip
 unzip diffusion-transformer.zip
 ```
 
+Alternatively, the pretrained models can also be downloaded from Hugging Face: https://huggingface.co/HySonLab/EvoSynth
+
 ## 2. Run EvoSynth Inference
 
 Once the checkpoints are downloaded, molecular generation can be performed using the provided shell script:
