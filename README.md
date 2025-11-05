@@ -96,6 +96,23 @@ This work builds directly upon two prior open-source frameworks that form the fo
 }
 ```
 
+## Please cite our work:
+
+```bibtex
+@article {Nguyen2025.11.04.686584,
+	author = {Nguyen, Viet Thanh Duy and Pham, Phuc and Hy, Truong-Son},
+	title = {EVOSYNTH: Enabling Multi-Target Drug Discovery through Latent Evolutionary Optimization and Synthesis-Aware Prioritization},
+	elocation-id = {2025.11.04.686584},
+	year = {2025},
+	doi = {10.1101/2025.11.04.686584},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Complex diseases, such as cancer and neurodegeneration, feature interconnected pathways, making single-target therapies ineffective due to pathway redundancy and compensatory mechanisms. Polypharmacy, which combines multiple drugs to target distinct proteins, addresses this but often leads to drug-drug interactions, cumulative toxicity, and complex pharmacokinetics. To overcome these challenges, we introduce EVOSYNTH, a modular framework for multi-target drug discovery that combines latent evolution and synthesis-aware prioritization to generate and prioritize candidates with high translational potential. Latent evolution navigates a chemically and functionally informed latent space to identify candidates with strong predicted affinity across multiple targets. Synthesis-aware prioritization evaluates both retrosynthetic feasibility and the trade-off between synthetic cost and therapeutic reward, enabling practical and efficient candidate selection. Applied to dual inhibition of JNK3 and GSK3-beta in Alzheimer{\textquoteright}s disease and PI3K and PARP1 in ovarian cancer, EVOSYNTH consistently outperforms baseline generative models, achieving higher predicted affinities, improved scaffold diversity, and lower synthesis costs. These findings highlight EVOSYNTH{\textquoteright}s ability to integrate target-driven generation with practical synthesizability, establishing a scalable framework for multi-target and polypharmacological drug discovery. Our source code and data to reproduce all experiments is publicly available on GitHub at: https://github.com/HySonLab/EvoSynthCompeting Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2025/11/05/2025.11.04.686584},
+	eprint = {https://www.biorxiv.org/content/early/2025/11/05/2025.11.04.686584.full.pdf},
+	journal = {bioRxiv}
+}
+```
+
 
 
 
