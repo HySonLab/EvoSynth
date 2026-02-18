@@ -25,7 +25,14 @@ unzip diffusion-transformer.zip
 
 Alternatively, the pretrained models can also be downloaded from Hugging Face: https://huggingface.co/HySonLab/EvoSynth
 
-## 2. Run EvoSynth Inference
+## 2. Install Required Dependencies
+
+EvoSynth relies on two core modules: MolSculptor and SPARROW. Each module has its own dependency requirements and installation procedure. Before running EvoSynth, please install all required packages by following the detailed instructions provided in:
+
+- `MolSculptor/README.md`
+- `SPARROW/README.md`
+
+## 3. Run EvoSynth Inference
 
 Once the checkpoints are downloaded, molecular generation can be performed using the provided shell script:
 
@@ -35,7 +42,7 @@ bash ./MolSculptor/diff_evo_opt_dual.sh
 
 This script runs the dual-target optimization pipeline with the pretrained EvoSynth model. Before execution, users should review and update the parameters to suit their specific use case.
 
-## 3. Run Synthesis-Aware Prioritization with SPARROW
+## 4. Run Synthesis-Aware Prioritization with SPARROW
 
 After molecule generation, the resulting `.pkl` file (e.g., `diffusion_es_opt.pkl`) can be processed and evaluated for synthetic feasibility using **SPARROW**.
 
@@ -103,17 +110,17 @@ This work builds directly upon two prior open-source frameworks that form the fo
 ## Please cite our work:
 
 ```bibtex
-@article {Nguyen2025.11.04.686584,
-	author = {Nguyen, Viet Thanh Duy and Pham, Phuc and Hy, Truong-Son},
-	title = {EVOSYNTH: Enabling Multi-Target Drug Discovery through Latent Evolutionary Optimization and Synthesis-Aware Prioritization},
-	elocation-id = {2025.11.04.686584},
-	year = {2025},
-	doi = {10.1101/2025.11.04.686584},
-	publisher = {Cold Spring Harbor Laboratory},
-	abstract = {Complex diseases, such as cancer and neurodegeneration, feature interconnected pathways, making single-target therapies ineffective due to pathway redundancy and compensatory mechanisms. Polypharmacy, which combines multiple drugs to target distinct proteins, addresses this but often leads to drug-drug interactions, cumulative toxicity, and complex pharmacokinetics. To overcome these challenges, we introduce EVOSYNTH, a modular framework for multi-target drug discovery that combines latent evolution and synthesis-aware prioritization to generate and prioritize candidates with high translational potential. Latent evolution navigates a chemically and functionally informed latent space to identify candidates with strong predicted affinity across multiple targets. Synthesis-aware prioritization evaluates both retrosynthetic feasibility and the trade-off between synthetic cost and therapeutic reward, enabling practical and efficient candidate selection. Applied to dual inhibition of JNK3 and GSK3-beta in Alzheimer{\textquoteright}s disease and PI3K and PARP1 in ovarian cancer, EVOSYNTH consistently outperforms baseline generative models, achieving higher predicted affinities, improved scaffold diversity, and lower synthesis costs. These findings highlight EVOSYNTH{\textquoteright}s ability to integrate target-driven generation with practical synthesizability, establishing a scalable framework for multi-target and polypharmacological drug discovery. Our source code and data to reproduce all experiments is publicly available on GitHub at: https://github.com/HySonLab/EvoSynthCompeting Interest StatementThe authors have declared no competing interest.},
-	URL = {https://www.biorxiv.org/content/early/2025/11/05/2025.11.04.686584},
-	eprint = {https://www.biorxiv.org/content/early/2025/11/05/2025.11.04.686584.full.pdf},
-	journal = {bioRxiv}
+@article{Nguyen2026,
+author={Nguyen, Viet Thanh Duy and Pham, Phuc and Hy, Truong-Son},
+title={Enabling multi-target drug discovery through latent evolutionary optimization and synthesis-aware prioritization (EVOSYNTH)},
+journal={Communications Chemistry},
+year={2026},
+month={Feb},
+day={16},
+abstract={Complex diseases, such as cancer and neurodegeneration, feature interconnected pathways, making single-target therapies ineffective due to pathway redundancy and compensatory mechanisms. Polypharmacy, which combines multiple drugs to target distinct proteins, addresses this but often leads to drug-drug interactions, cumulative toxicity, and complex pharmacokinetics. To overcome these challenges, we introduce EVOSYNTH, a modular framework for multi-target drug discovery that combines latent evolution and synthesis-aware prioritization to generate and prioritize candidates with high translational potential. Latent evolution navigates a chemically and functionally informed latent space to identify candidates with strong predicted affinity across multiple targets. Synthesis-aware prioritization evaluates both retrosynthetic feasibility and the trade-off between synthetic cost and therapeutic reward, enabling practical and efficient candidate selection. Applied to dual inhibition of JNK3 and GSK3$\beta$ in Alzheimer's disease and PI3K and PARP1 in ovarian cancer, EVOSYNTH consistently outperforms baseline generative models, achieving higher predicted affinities, improved scaffold diversity, and lower synthesis costs. These findings highlight EVOSYNTH's ability to integrate target-driven generation with practical synthesizability, establishing a scalable framework for multi-target and polypharmacological drug discovery. Our source code and data to reproduce all experiments are publicly available on GitHub at: https://github.com/HySonLab/EvoSynth.},
+issn={2399-3669},
+doi={10.1038/s42004-026-01945-4},
+url={https://doi.org/10.1038/s42004-026-01945-4}
 }
 ```
 
