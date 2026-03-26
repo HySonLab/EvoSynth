@@ -1,6 +1,6 @@
 # EvoSynth: Enabling Multi-Target Drug Discovery through Latent Evolutionary Optimization and Synthesis-Aware Prioritization
 
-Published at *Nature - Communications Chemistry*, DOI 10.1038/s42004-026-01945-4
+Published at *Nature - Communications Chemistry*, Volume 9, Number 133, DOI 10.1038/s42004-026-01945-4
 
 https://www.nature.com/articles/s42004-026-01945-4
 
