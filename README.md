@@ -85,10 +85,12 @@ This work builds directly upon two prior open-source frameworks that form the fo
 
 - **[MolSculptor](https://github.com/egg5154/MolSculptor):** A diffusion-evolution framework for multi-site inhibitor design.
 ```bibtex
-@article{li2025molsculptor,
-  title={MolSculptor: an adaptive diffusion-evolution framework enabling generative drug design for multi-target affinity and selectivity},
-  author={Li, Yanheng and Lin, Xiaohan and Hao, Yize and Zhang, Jun and Wu, Yundong and Gao, Yi Qin},
-  year={2025}
+@article{li2026molsculptor,
+  title={MolSculptor: An Adaptive Diffusion--Evolution Framework Enabling Generative Drug Design for Multitarget Affinity and Selectivity},
+  author={Li, Yanheng and Dong, Haojia and Lin, Xiaohan and Hao, Yize and Xue, Yue and Zhang, Jun and Wu, Yundong and Zhou, Jinming and Gao, Yi Qin},
+  journal={Journal of Chemical Theory and Computation},
+  year={2026},
+  publisher={ACS Publications}
 }
 ```
 
